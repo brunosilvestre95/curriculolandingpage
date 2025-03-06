@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+FONTES
+*/
+
+@font-face {
+    font-family: 'heading';
+    src: url('/fonts/heading/Heading-Pro-ExtraBold-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'headingnav';
+    src: url('/fonts/heading/Heading-Pro-Thin-trial.ttf') format('truetype');
+}
+
+/*
+
+
+Paleta 5: Moderna e Tecnológica
+Cor Primária: Azul elétrico (#0077B6)
+(Usado para cabeçalhos e elementos principais.)
+
+Cor Secundária: Preto (#000000)
+(Usado para fundos escuros.)
+
+Cor de Destaque: Verde neon (#39FF14)
+(Usado para botões e destaques.)
+
+Cor de Texto: Branco (#FFFFFF)
+(Para contraste com o fundo preto.)
+
+Cor de Acento: Cinza claro (#CCCCCC)
+(Usado para detalhes e bordas.)
+
+
+
+======= fontes =======
+
+Texto Principal:
+
+Cor: Branco (#FFFFFF)
+
+Uso: Para a maior parte do texto (parágrafos, listas, etc.).
+
+Motivo: O branco contrasta bem com o fundo preto (#000000), garantindo legibilidade.
+
+Títulos e Cabeçalhos:
+
+Cor: Verde Neon (#39FF14)
+
+Uso: Para títulos (h1, h2, h3) e cabeçalhos de seções.
+
+Motivo: O verde neon chama a atenção e combina com o estilo moderno e tecnológico.
+
+Links e Botões:
+
+Cor Normal: Branco (#FFFFFF)
+
+Cor ao Passar o Mouse (Hover): Verde Neon (#39FF14)
+
+Uso: Para links no menu e botões interativos.
+
+Motivo: O branco é neutro, e o verde neon destaca a interação.
+
+Texto Secundário ou Detalhes:
+
+Cor: Cinza Claro (#CCCCCC)
+
+Uso: Para textos menos importantes, como legendas, notas ou informações complementares.
+
+Motivo: O cinza claro é mais suave e não compete visualmente com o texto principal.
+
+
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #ff0000;
+    height: 100vh; /*100x a altura da tela*/
+    width: 100vw; /*100x a largura da tela*/
+}
+
+header {
+    background-color: #2E3135;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header > h1 {
+   /* border: 1px dotted black; 
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.40);
+} */
+
+header > nav {
+    /* border: 1px dotted black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+} 
+
+header > nav > a {
+    background-color: #666666;
+    color: #FFFFFF;
+    font-family: 'headingnav';
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2.3px 2.3px 2.3px #cccccc49;
+    text-decoration: none;
+    text-align: center; 
+    letter-spacing: 2.5px; 
+}
+
+header > nav > a:hover {
+    background-color: #39FF14;
+    padding: 9.6px;
+    margin: 5px;
+    color: black;
+    transition: background-color 0.5s;
+    box-shadow: 1.5px 1.5px 1.5px #ffffff52;
+}
+
+div.c-sobre {
+    background-color: #2C3E50;
+    margin: 0px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #cccccc4d;
+
+    text-align:  justify;
+    
+
+}
+
+div > h3 {
+    color: #FFFFFF; /* #B6B6B6 */
+    text-align: left; 
+    font-family: 'heading', Arial, sans-serif;
+    font-size: 23px;
+}
+
+div > h1, div > h2 {
+    color: #39FF14;
+    text-align: center;
+    font-family: 'heading', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+div > .p-myname {
+    color: #FFFFFF; /* #B6B6B6 */
+    text-align: left; 
+    font-family: 'heading', Arial, sans-serif;
+    font-size: 38px;
+}
+
+div > p {
+    color: #A9B6B6;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    
+}
